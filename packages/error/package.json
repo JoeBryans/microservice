@@ -1,0 +1,8 @@
+{
+    "name":"@repose/error",
+    "private":"true",
+    "version":"1.0.0",
+    "description":"error package",
+    "author":"DELL",
+    "license":"ISC"
+}

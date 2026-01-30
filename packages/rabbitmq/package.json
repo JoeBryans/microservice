@@ -1,0 +1,13 @@
+{
+    "name": "@repos/rabbitmq",
+    "version": "1.0.0",
+    "description": "rabbitmq package",
+    "private": "true",
+    "author": "bryan",
+    "dependencies": {
+        "amqplib": "^0.10.9"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.8"
+    }
+}

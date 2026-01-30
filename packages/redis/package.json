@@ -1,0 +1,12 @@
+{
+    "name": "@repos/redis",
+    "private":"true",
+    "version": "1.0.0",
+    "description": "redis package",
+    "author": "Dell",
+    "license": "ISC",
+    "dependencies": {
+        "ioredis": "^5.8.2",
+        "redis": "^5.10.0"
+    }
+}

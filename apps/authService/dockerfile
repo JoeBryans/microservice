@@ -1,0 +1,20 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json turbo.json ./
+
+COPY apps/authService ./apps/authService
+
+COPY packages ./packages
+
+RUN npm install --workspace=auth-service
+
+WORKDIR /app/apps/auth-service
+
+RUN npm run build
+
+EXPOSE 4000
+
+CMD ["npm", "run", "start"]
+

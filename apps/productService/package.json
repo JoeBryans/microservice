@@ -1,0 +1,19 @@
+{
+    "name": "product-service",
+    "version": "1.0.0",
+    "description": "product service",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "nodemon src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js"
+    },
+    "author": "Dell",
+    "license": "ISC",
+    "devDependencies": {
+        "ts-node": "^10.9.2"
+    },
+    "dependencies": {
+        "redis": "^5.10.0"
+    }
+}

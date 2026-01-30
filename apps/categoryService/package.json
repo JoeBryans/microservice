@@ -1,0 +1,17 @@
+{
+    "name": "category-service",
+    "version": "1.0.0",
+    "description": "category service",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "node src/index.ts",
+        "dev": "nodemon "
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^5.2.1",
+        "mongoose": "^9.1.1",
+        "nodemon": "^3.1.11",
+        "ts-node": "^10.9.2"
+    }
+}
