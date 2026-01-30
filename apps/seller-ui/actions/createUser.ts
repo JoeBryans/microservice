@@ -55,7 +55,7 @@ export const authUser = async () => {
     const cookieStorage = await cookies()
     const accessToken = cookieStorage.get("access_token")?.value;
     console.log("accessToken: ", accessToken);
-    const ACCESS_TOKEN_SECRET = "eShop_QYEHF-KJZXK47he9i_8r=_*&$44$9q-]kmeidc7350+w5635*(!)"
+    const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET!
     const decodedToken = Jwt.verify(accessToken!, ACCESS_TOKEN_SECRET,
         {
             ignoreExpiration: true,
