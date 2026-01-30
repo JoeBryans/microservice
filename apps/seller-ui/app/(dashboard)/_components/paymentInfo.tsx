@@ -47,7 +47,7 @@ const PaymentInfo = () => {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": "Bearer sk_test_90e7de4e14b21da27ce8688f92c6dec5cb812e95",
+                        "Authorization": "Bearer ",
                     },
                 }
             )
