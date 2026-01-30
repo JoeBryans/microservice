@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function GET(request: NextRequest) {
   try {
 
-      const Secret ="eShop_KJZXK47he9i_8r=_*&$44$9q-psg%$q(&w)SAetqup"
+      const Secret =process.env.ACCESS_TOKEN_SECRET
       const cookieStorage = await cookies()
       const email_verified = cookieStorage.get("email_verified");
       const value = email_verified?.value!;
